@@ -25,7 +25,7 @@ const Home = () => {
   
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Welcome to LEGO Braille Bricks</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">Learn LEGO Braille Bricks with DARJYO</h1>
       
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Your Progress</h2>
@@ -61,7 +61,7 @@ const Home = () => {
             alt="Colorful LEGO bricks"
             className="w-full h-48 object-cover rounded-lg mb-4"
           />
-          <h2 className="text-2xl font-semibold mb-2">Learn Braille</h2>
+          <h2 className="text-2xl font-semibold mb-2">Learn Braille with DARJYO</h2>
           <p className="text-gray-600 mb-4">Start your journey into the world of Braille with our interactive lessons.</p>
           <Link
             to="/learn"
@@ -76,7 +76,7 @@ const Home = () => {
             alt="Child playing with LEGO"
             className="w-full h-48 object-cover rounded-lg mb-4"
           />
-          <h2 className="text-2xl font-semibold mb-2">Practice Activities</h2>
+          <h2 className="text-2xl font-semibold mb-2">Practice with DARJYO</h2>
           <p className="text-gray-600 mb-4">Reinforce your learning with fun, interactive exercises.</p>
           <Link
             to="/practice"
@@ -121,7 +121,7 @@ const Learn = () => {
   if (!selectedCategory) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-6">Learn Braille</h1>
+        <h1 className="text-3xl font-bold mb-6">Learn Braille with DARJYO</h1>
         <div className="grid gap-6">
           {Object.entries(categories).map(([category, chars]) => (
             <button
@@ -144,7 +144,7 @@ const Learn = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 capitalize">{selectedCategory}</h1>
+      <h1 className="text-3xl font-bold mb-6 capitalize">{selectedCategory} with DARJYO</h1>
       <div className="bg-white p-8 rounded-xl shadow-lg">
         <div className="flex flex-col items-center gap-8">
           <div className="text-6xl font-bold">{currentChar?.char}</div>
@@ -188,7 +188,7 @@ const Practice = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Practice Exercises</h1>
+      <h1 className="text-3xl font-bold mb-6">Practice with DARJYO</h1>
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-xl shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">Letter Recognition</h2>
@@ -230,7 +230,7 @@ function App() {
             <div className="flex justify-between items-center h-16">
               <Link to="/" className="flex items-center gap-2">
                 <Blocks className="h-8 w-8 text-blue-500" />
-                <span className="font-bold text-xl">Braille Bricks</span>
+                <span className="font-bold text-xl">Braille Bricks by DARJYO</span>
               </Link>
               
               <button
