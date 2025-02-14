@@ -230,6 +230,8 @@ function App() {
             <div className="flex justify-between items-center h-16">
               <Link to="/" className="flex items-center gap-2">
                 <Blocks className="h-8 w-8 text-blue-500" />
+                <img src="https://avatars.githubusercontent.com/u/62150946?s=200&v=4" alt="DARJYO Logo" className="h-8 w-auto"/>
+                
                 <span className="font-bold text-xl">Braille Bricks by DARJYO</span>
               </Link>
               
